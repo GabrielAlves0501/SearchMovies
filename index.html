@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Tac+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu-busca">
+            <div class="menu">
+                <div class="container">
+                    <input type="checkbox" id="checkbox-menu">
+                    <label for="checkbox-menu" id="checkboxMenu">
+                        <span class="change-color-span"></span>
+                        <span class="change-color-span"></span>
+                        <span class="change-color-span"></span>
+                    </label>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><p>Categorias</p></li>
+                        <li><a href="#" id="populares">Populares</a></li>
+                        <li><a href="#" id="acao">Ação</a></li>
+                        <li><a href="#" id="animacao">Animação</a></li>
+                        <li><a href="#" id="aventura">Aventura</a></li>
+                        <li><a href="#" id="comedia">Comédia</a></li>
+                        <li><a href="#" id="fantasia">Fantasia</a></li>
+                        <li><a href="#" id="ficcao">Ficção Científica</a></li>
+                        <li><a href="#" id="terror">Terror</a></li>
+                        <li><a href="#" id="romance">Romance</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-bg" id="menu-bg"></div>
+            </div>
+            <div class="title">
+                <h1>SearchMovies</h1>
+            </div>
+            <div class="box-busca">
+                    <div class="search-box">
+                        <input type="text" name="busca" id="busca" class="search-box-input" placeholder="Busque seu filme" autocomplete="off">
+                        <button type="submit" value="" class="search-box-button" onclick="fetchSearchMovie()"><i class="search-box-icone fa fa-search"></i></button>
+                    </div>
+            </div>
+        </div>
+    </header>
+    
+    <ul id="movieList"></ul>
+    <script src="index.js"></script>
+</body>
+</html>
